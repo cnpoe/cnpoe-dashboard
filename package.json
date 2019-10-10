@@ -1,10 +1,10 @@
 {
-  "name": "cnpoe-dashboard",
+  "name": "@cnpoe/dashboard",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-bundle": "vue-cli-service build --target lib --name cnpoe ./src/components/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -42,5 +42,13 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
+  ],
+  "main": "./dist/cnpoe.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
   ]
 }
